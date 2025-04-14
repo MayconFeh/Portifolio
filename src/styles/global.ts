@@ -4,7 +4,9 @@ import { reset } from './reset';
 export const GlobalStyle = createGlobalStyle`
   ${reset}
 
-  body {
+  body, html, #root {
+    width: 100%;
+    height: 100%;
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
     font-family: 'Inter', sans-serif;
